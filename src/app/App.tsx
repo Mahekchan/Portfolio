@@ -147,7 +147,7 @@ const PROJECTS = [
   {
     name: "PortfolioOS",
     image: portfolioImg,
-    live: "https://industrial-control.onrender.com",
+    live: "https://mahek-shaikh-portfolio.netlify.app/",
     tag: "Interactive OS-Themed Portfolio",
     desc: "A macOS-inspired interactive portfolio with draggable windows, a Finder-style project browser, and ambient micro-interactions.",
     tech: ["React", "Motion", "TypeScript", "Tailwind"],
