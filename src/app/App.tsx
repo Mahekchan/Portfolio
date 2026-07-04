@@ -18,6 +18,7 @@ import {
   BrainCircuit,
   Palette,
   Wrench,
+  Bot,
 } from "lucide-react";
 import { ImageWithFallback } from "@/app/components/figma/ImageWithFallback";
 import avatarPortrait from "@/imports/image.png";
@@ -30,7 +31,6 @@ import { motion, useReducedMotion } from "framer-motion";
 import {
   SiReact,
   SiPython,
-  SiTensorflow,
   SiFigma,
   SiNodedotjs,
   SiMongodb,
@@ -142,7 +142,7 @@ const PROJECTS = [
     live: "https://cybershield-frontend-veq2.onrender.com",
     tag: "AI-Powered Text Classification System",
     desc: "Campus safety analytics dashboard, real-time alerts, and a custom AI assistant chatbot.",
-    tech: ["Python", "React", "AI", "TypeScript", "Tailwind CSS", "Firebase"],
+    tech: ["Python", "React", "AI", "JavaScript", "Tailwind CSS", "Firebase"],
   },
   {
     name: "PortfolioOS",
@@ -253,14 +253,14 @@ const BADGES = [
   {
     label: "Python",
     icon: <SiPython size={16} />,
-    pos: { top: "28%", left: "-7%" },
+    pos: { top: "28%", left: "-1%" },
     bg: "rgba(196,181,253,0.88)",
     dl: "0.7s",
   },
   {
-    label: "TensorFlow",
-    icon: <SiTensorflow size={16} />,
-    pos: { bottom: "26%", right: "-6%" },
+    label: "Artificial Intelligence",
+    icon: <Bot size={16} />,
+    pos: { bottom: "5%", right: "-10%" },
     bg: "rgba(110,231,183,0.88)",
     dl: "1.2s",
   },
@@ -274,14 +274,14 @@ const BADGES = [
   {
     label: "Node.js",
     icon: <SiNodedotjs size={16} />,
-    pos: { top: "42%", right: "-8%" },
+    pos: { top: "42%", right: "-12%" },
     bg: "rgba(253,230,138,0.88)",
     dl: "0.9s",
   },
   {
     label: "MongoDB",
     icon: <SiMongodb size={16} />,
-    pos: { top: "4%", left: "-0%" },
+    pos: { top: "0%", left: "13%" },
     bg: "rgba(249,168,212,0.75)",
     dl: "1.5s",
   },
@@ -2770,4 +2770,3 @@ function FooterNavBtn({
     </button>
   );
 }
-                      
