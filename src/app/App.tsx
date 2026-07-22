@@ -70,60 +70,67 @@ const MAILTO_URL =
 
 const SKILLS = [
   {
-    category: "Frontend",
+    category: "Programming Languages",
     icon: <MonitorSmartphone size={20} />,
     col: C.pink,
     colD: C.pinkD,
-    items: [
-      "React.js",
-      "JavaScript",
-      "TypeScript",
-      "HTML",
-      "CSS",
-      "Tailwind CSS",
-    ],
+    items: ["HTML5", "CSS3", "JavaScript", "TypeScript", "SQL"],
   },
   {
-    category: "Backend",
+    category: "Front-End Development",
     icon: <ServerCog size={20} />,
     col: C.mint,
     colD: C.mintD,
-    items: ["Node.js", "Express.js", "REST APIs", "Socket.io", "Postman"],
+    items: [
+      "React.js",
+      "TailwindCSS",
+      "Responsive Web Design",
+      "UI/UX Principles",
+    ],
   },
   {
-    category: "Database",
+    category: "Web Technologies",
     icon: <Database size={20} />,
     col: C.lemon,
     colD: "#d97706",
-    items: ["MongoDB", "Firebase"],
+    items: ["RESTful APIs", "WebSockets (Socket.io)"],
   },
   {
-    category: "AI & Machine Learning",
+    category: "Tools & Platforms",
     icon: <BrainCircuit size={20} />,
     col: C.sky,
     colD: C.skyD,
     items: [
-      "Python",
-      "Pandas",
-      "NumPy",
-      "NLP",
-      "Supervised Learning",
-      "Unsupervised Learning",
+      "VS Code",
+      "GitHub",
+      "Postman",
+      "Firebase",
+      "MongoDB",
+      "Netlify",
+      "Render",
+      "Jira",
+      "Figma",
     ],
   },
   {
-    category: "Design",
+    category: "Quality Assurance",
     icon: <Palette size={20} />,
     col: C.lav,
     colD: C.lavD,
-    items: ["Figma", "UI Design", "Web Design", "Responsive Layouts"],
+    items: [
+      "Manual Testing",
+      "Test Case Design",
+      "Bug Reporting",
+      "SDLC",
+      "STLC",
+    ],
   },
   {
-    category: "Developer Tools",
+    category: "Design & UI/UX",
     icon: <Wrench size={20} />,
     col: C.pink,
     colD: C.pinkD,
-    items: ["VS Code", "Git", "GitHub", "Firebase Hosting", "Colab"],
+    items: ["Figma", "Responsive UI/UX", "User-Centered Design"],
   },
 ];
 
@@ -133,7 +140,7 @@ const PROJECTS = [
     image: shieldChatImg,
     live: "https://fullstack-chat-app-qi77.onrender.com",
     tag: "Secure Real-Time Messaging Hub",
-    desc: "Custom messaging UI with end-to-end encryption and an AI sentence-rephrasing assistant for professional, safe communication.",
+    desc: "A responsive and accessible real-time messaging interface focused on polished UI/UX, clear interaction flows, and a smooth user experience for everyday communication.",
     tech: ["React", "Node.js", "Socket.io", "OpenAI", "MongoDB"],
   },
   {
@@ -141,7 +148,7 @@ const PROJECTS = [
     image: cyberShieldImg,
     live: "https://cybershield-frontend-veq2.onrender.com",
     tag: "AI-Powered Text Classification System",
-    desc: "Campus safety analytics dashboard, real-time alerts, and a custom AI assistant chatbot.",
+    desc: "An interactive, user-friendly dashboard with responsive layouts, intuitive visual hierarchy, and accessible front-end functionality designed for clear decision-making.",
     tech: ["Python", "React", "AI", "JavaScript", "Tailwind CSS", "Firebase"],
   },
   {
@@ -149,7 +156,7 @@ const PROJECTS = [
     image: portfolioImg,
     live: "https://mahek-shaikh-portfolio.netlify.app/",
     tag: "Interactive OS-Themed Portfolio",
-    desc: "A macOS-inspired interactive portfolio with draggable windows, a Finder-style project browser, and ambient micro-interactions.",
+    desc: "A thoughtfully crafted portfolio experience with responsive UI/UX, accessible navigation, and interactive front-end details that enhance storytelling and usability.",
     tech: ["React", "Motion", "TypeScript", "Tailwind"],
   },
 ];
@@ -159,7 +166,7 @@ const EXPERIENCE = [
     role: "Machine Learning Intern",
     co: "YBI Foundation",
     period: "Jul 2024 – Aug 2024",
-    loc: "Online",
+    loc: "Virtual",
     desc: [
       "Built end-to-end data preprocessing pipelines and feature engineering workflows using Python for predictive model development.",
       "Applied supervised and unsupervised machine learning algorithms to improve model accuracy and analytical performance.",
@@ -177,47 +184,67 @@ const EXPERIENCE = [
     col: C.sky,
     colD: C.skyD,
   },
+];
+
+const CERTIFICATIONS = [
   {
-    role: "Trainee",
-    co: "Atos Prayas Foundation",
-    period: "Jul 2025 – Aug 2025",
-    loc: "Virar, Maharashtra",
-    desc: [
-      "Trained in network infrastructure security, cybersecurity fundamentals, and digital risk assessment.",
-      "Configured secure environments, analyzed system configurations, and evaluated software vulnerabilities.",
-    ],
+    title: "Cyber Security & Privacy",
+    org: "NPTEL, IIT Madras",
+    period: "July - October 2025",
+    href: "/Cyber Security and Privacy.pdf",
     tags: [
-      "Network Security",
       "Cybersecurity",
-      "Threat Analysis",
-      "Configuration Management",
-      "Risk Assessment",
+      "Privacy",
+      "Network Security",
+      "Information Security",
+      "Regulatory Compliance",
     ],
-    icon: <ServerCog size={20} />,
-    cert: "/Atos-Prayas-Foundation.pdf",
-    col: C.pink,
-    colD: C.pinkD,
   },
   {
-    role: "Technical Intern",
-    co: "The Intellect Technologies",
-    period: "Aug 2022",
-    loc: "Boisar, Maharashtra",
-    desc: [
-      "Worked with IoT hardware platforms and cloud-connected monitoring systems.",
-      "Configured hardware environments and validated cloud-based sensor communication.",
-    ],
+    title: "Introduction to MongoDB",
+    org: "MongoDB",
+    period: "June 2025",
+    href: "/MongoDB Certificate.pdf",
+    tags: ["Databases", "NoSQL", "MongoDB", "Data Modeling", "Aggregation"],
+  },
+  {
+    title: "Data Analytics for Data Science",
+    org: "Viva Institute of Technology (Value Added Course)",
+    period: "April 2025",
+    href: "/Data Science & Machine Learning.pdf",
     tags: [
-      "IoT",
-      "Augmented Reality",
-      "Virtual Reality",
-      "Hardware",
-      "Sensors",
+      "Data Analytics",
+      "Data Science",
+      "Data Visualization",
+      "Data Cleaning",
+      "Data Analysis",
     ],
-    icon: <MonitorSmartphone size={20} />,
-    cert: "/The-Intellect-Technologies.pdf",
-    col: C.mint,
-    colD: C.mintD,
+  },
+  {
+    title: "Cyber Security Certification",
+    org: "Atos Prayas Foundation & ICT Academy",
+    period: "August 2025",
+    href: "/Atos-Prayas-Foundation.pdf",
+    tags: [
+      "Grade A",
+      "Cybersecurity",
+      "Information Security",
+      "Network Security",
+      "Ethical Hacking",
+    ],
+  },
+  {
+    title: "Quality Assurance with AI",
+    org: "Unstop",
+    period: "July 2026",
+    href: "/Quality Assurance with AI.pdf",
+    tags: [
+      "Quality Assurance",
+      "SDLC",
+      "Black Box Testing",
+      "Selenium",
+      "Automation",
+    ],
   },
 ];
 
@@ -1820,7 +1847,15 @@ export default function App() {
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.05 }}
             >
-              AI ML Engineer.
+              <span
+                style={{
+                  color: C.navy,
+                  fontSize: "0.85em",
+                  display: "inline-block",
+                }}
+              >
+                Hi, I’m Mahek —
+              </span>
               <br />
               <span
                 style={{
@@ -1830,9 +1865,8 @@ export default function App() {
                   backgroundClip: "text",
                 }}
               >
-                Full-Stack Developer.
+                a Web Designer & Front-End Developer
               </span>
-              <br />
             </motion.h1>
 
             <motion.p
@@ -1849,9 +1883,9 @@ export default function App() {
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.25 }}
             >
-              AI ML Engineer &amp; Full-Stack Developer turning complex ideas
-              into intelligent, beautiful digital experiences that feel
-              effortless.
+              I design and develop responsive, user-friendly web experiences
+              using React, TypeScript, TailwindCSS, HTML5, and CSS3, with a
+              strong focus on clean UI/UX and performance.
             </motion.p>
 
             <div className="flex flex-wrap items-center gap-3">
@@ -2097,9 +2131,9 @@ export default function App() {
             {/* Text */}
             <div className="lg:col-span-3 flex flex-col gap-5">
               {[
-                `Hi — I'm <b>Mahek Shaikh</b>, a Full-Stack Developer, AI/ML Engineer and Web Designer. My journey began with machine learning pipelines and NLP research — giving me an analytical foundation I now apply to every product I build.`,
-                `I fell in love with the intersection of <b>design and engineering</b> — the magic moment where a pixel-perfect interface meets a robust, intelligent backend. I transitioned into full-stack development and interactive UI/UX, building products that are as smart as they are beautiful.`,
-                `I thrive in fast-paced environments, love systems thinking, and believe the best digital products come from teams who care deeply about craft, code, and the human experience.`,
+                `Creative and detail-oriented Web Developer & Web Designer with hands-on experience in designing and developing modern, responsive web interfaces using React, TypeScript, JavaScript, TailwindCSS, HTML5, and CSS3.`,
+                `Skilled in creating user-centric UI/UX designs, integrating RESTful APIs, and building interactive front-end experiences.`,
+                `Currently expanding knowledge in Quality Assurance and Manual Software Testing, including test case design, defect tracking, and SDLC/STLC concepts.`,
               ].map((t, i) => (
                 <motion.p
                   key={i}
@@ -2121,13 +2155,30 @@ export default function App() {
                     ease: "easeOut",
                     delay: 0.2 + i * 0.1,
                   }}
-                  dangerouslySetInnerHTML={{
-                    __html: t
-                      .replace(/<b>/g, `<strong style="color:${C.navy}">`)
-                      .replace(/<\/b>/g, "</strong>"),
-                  }}
-                />
+                >
+                  {t}
+                </motion.p>
               ))}
+              <motion.p
+                className="text-[16px] leading-[1.82]"
+                style={{ color: C.sub }}
+                initial={
+                  shouldReduceMotion
+                    ? { opacity: 1, y: 0 }
+                    : { opacity: 0, y: 30 }
+                }
+                whileInView={
+                  shouldReduceMotion
+                    ? { opacity: 1, y: 0 }
+                    : { opacity: 1, y: 0 }
+                }
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
+              >
+                <strong style={{ color: C.navy }}>Currently Learning:</strong>{" "}
+                Manual Software Testing, Test Case Writing, Bug Reporting, Jira
+                for defect tracking, and SDLC/STLC methodologies.
+              </motion.p>
               <div className="flex flex-wrap gap-2.5 mt-1">
                 {[
                   "AI Enthusiast",
@@ -2354,6 +2405,74 @@ export default function App() {
                 </motion.div>
               );
             })}
+          </motion.div>
+        </div>
+      </motion.section>
+
+      {/* ════════════════════════════════════════════════
+          §5.2 CERTIFICATIONS
+      ════════════════════════════════════════════════ */}
+      <motion.section
+        id="certifications"
+        className="py-14 lg:py-20 px-8 lg:px-16"
+        initial={shouldReduceMotion ? "visible" : "hidden"}
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+        variants={sectionFadeUp}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+        <div className="max-w-7xl mx-auto">
+          <SecHead label="Certifications" title="Verified Credentials" />
+          <motion.div
+            className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 mt-14"
+            initial={shouldReduceMotion ? "visible" : "hidden"}
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={cardStagger}
+          >
+            {CERTIFICATIONS.map((cert, i) => (
+              <motion.div key={i} variants={cardFadeScale} custom={i}>
+                <GlassCard className="p-6 h-full flex flex-col justify-between">
+                  <div>
+                    <div
+                      className="text-xs font-semibold uppercase tracking-[0.22em] mb-3"
+                      style={{ color: C.pinkD }}
+                    >
+                      Certification
+                    </div>
+                    <h4
+                      className="text-xl font-semibold leading-tight"
+                      style={{ color: C.navy }}
+                    >
+                      {cert.title}
+                    </h4>
+                    <p className="text-sm mt-2" style={{ color: C.sub }}>
+                      {cert.org}
+                    </p>
+                    {cert.period && (
+                      <p className="text-sm mt-3" style={{ color: C.sub }}>
+                        {cert.period}
+                      </p>
+                    )}
+                  </div>
+                  <div className="mt-5 flex flex-wrap gap-2">
+                    {cert.tags.map((tag) => (
+                      <span key={tag} className="exp-pill">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  {cert.href && (
+                    <button
+                      onClick={() => window.open(cert.href, "_blank")}
+                      className="exp-cert-btn mt-5"
+                    >
+                      View Certificate
+                    </button>
+                  )}
+                </GlassCard>
+              </motion.div>
+            ))}
           </motion.div>
         </div>
       </motion.section>
